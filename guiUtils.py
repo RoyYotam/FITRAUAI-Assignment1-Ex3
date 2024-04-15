@@ -3,7 +3,6 @@ import threading
 import pygame
 import webbrowser
 import os
-import time
 from youtubeUtils import YoutubeUtils
 from osUtils import OsUtils
 from sceneUtils import SceneUtils
@@ -38,10 +37,6 @@ class SimplePygamePage:
         self.instructions_text = "Please enter a subject for the video:"
 
         self.gif_button_rect = None
-
-        # Flag and variables for controlling GIF display
-        self.last_show_time = 0
-        self.gif_display_interval = 5  # Interval in seconds between GIF displays
 
         self.suggestion_button_rect = pygame.Rect(440, 50, 30, 40)
         self.suggestions = []
