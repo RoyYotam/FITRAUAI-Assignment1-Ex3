@@ -27,7 +27,7 @@ class OsUtils:
 
     def get_valid_name_from_subject(self, subject, replacement='_'):
         # Characters that are not allowed in filenames across most operating systems
-        illegal_chars = r'[\/:*?"<>|\']'
+        illegal_chars = r'[\/:*?"<>|\'\.]'
 
         # Replace illegal characters with the replacement character
         valid_filename = re.sub(illegal_chars, replacement, subject)
